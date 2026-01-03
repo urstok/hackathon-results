@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Hack - Weekly Results</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="max-w-3xl mx-auto py-12 px-4">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4 italic">
+                TITAN <span class="text-blue-500">HACK</span>
+            </h1>
+            <div id="sat-date" class="bg-blue-500/10 text-blue-400 px-4 py-1 inline-block rounded-full text-xs font-bold tracking-widest uppercase mb-4"></div>
+            <p class="text-slate-400 text-sm font-semibold uppercase tracking-[0.4em]">Congrats Students</p>
+        </header>
+
+        <div class="sticky top-4 z-50 mb-10">
+            <div class="relative">
+                <input type="text" id="mainSearch" placeholder="Search your name..." 
+                    class="w-full bg-slate-900/90 border border-slate-700/50 p-5 pl-14 rounded-3xl outline-none focus:ring-2 focus:ring-blue-500 text-white shadow-2xl">
+                <div class="absolute right-4 top-3 bg-blue-600 px-4 py-2 rounded-xl text-xs font-black">
+                    <span id="active-count">0</span> LIVE
+                </div>
+            </div>
+        </div>
+
+        <div id="leaderboard-body" class="space-y-4"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
