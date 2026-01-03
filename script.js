@@ -1,4 +1,4 @@
-const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSsCQ4L-_WOH12HAByjTZJDVAkTFN__T5H-WX9pMGb8R0DDrpWQJ52DYZx642C4ejp-U3HEX-lE2mMo/pubhtml'; // Place your published CSV link here
+const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSsCQ4L-_WOH12HAByjTZJDVAkTFN__T5H-WX9pMGb8R0DDrpWQJ52DYZx642C4ejp-U3HEX-lE2mMo/pubhtml?gid=0&single=true'; // Place your published CSV link here
 let masterData = [];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -59,5 +59,6 @@ function filterResults() {
     const query = this.value.toLowerCase();
     renderRows(masterData.filter(s => s.name.toLowerCase().includes(query)));
 }
+
 
 
